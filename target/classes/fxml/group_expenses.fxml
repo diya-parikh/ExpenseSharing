@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.expenseshare.controller.GroupExpensesController"
+      spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label fx:id="groupNameLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="backButton" text="Back to Dashboard"/>
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label fx:id="balanceLabel" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="settleUpButton" text="Settle Up"/>
+        <Button fx:id="addExpenseButton" text="Add Expense"/>
+    </HBox>
+    
+    <ListView fx:id="expensesListView" VBox.vgrow="ALWAYS"/>
+</VBox> 

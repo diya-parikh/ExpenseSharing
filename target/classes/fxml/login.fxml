@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="com.expenseshare.controller.LoginController"
+      style="-fx-background-color: #f5f5f5;">
+    
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+    
+    <Label text="Expense Share" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    
+    <VBox spacing="10" style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 10;">
+        <Label text="Login" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        
+        <TextField fx:id="emailField" promptText="Email" style="-fx-padding: 10;"/>
+        
+        <PasswordField fx:id="passwordField" promptText="Password" style="-fx-padding: 10;"/>
+        
+        <Button text="Login" onAction="#handleLogin" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-padding: 10;"/>
+        
+        <Hyperlink text="Don't have an account? Register" onAction="#handleRegister" style="-fx-text-fill: #2196F3;"/>
+    </VBox>
+    
+    <Label fx:id="messageLabel" style="-fx-text-fill: red;"/>
+</VBox> 
