@@ -18,8 +18,10 @@ The **Expense Sharing Application** is a user-friendly tool designed to simplify
 - Record expenses and split costs among group members.
 - Automatically simplify debts to reduce the number of transactions required to settle payments.
 
-## Setup Instructions
+## Technologies Used
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/anishkodre/expenseShare
+- **Programming Language:** Java  
+- **User Interface:** JavaFX  
+- **Build Tool:** Maven  
+- **Database:** SQL (configured via `DatabaseConfig.java`)  
+- **Version Control:** Git  
